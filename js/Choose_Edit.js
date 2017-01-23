@@ -20,9 +20,20 @@ $(function(){
 		{field:'Type_Job_Name',title:'类型',width:100}, 
     ]]    
 });  
-
-	})
-
+	$('#Subject_Answer').combo({
+		multiple:true
+	});
+	$('#food').appendTo($('#Subject_Answer').combo('panel'))
+	});
+	var b="";
+	$('#food input').click(function(){
+		var obj=document.getElementsByName('test');
+		var t='';
+		for(var i=0;i<obj.length;i++){
+			if(obj[i].checked){t+=obj[i].value;}
+		}
+		$('#Subject_Answer').combo('setValue',t).combo('setText',t);
+	});
 
 function newUser(){
 	$('#dlg').dialog('open').dialog('setTitle','添加新题');

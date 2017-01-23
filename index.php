@@ -41,8 +41,9 @@
                 },
                 success: function (data, status) {
                     var types = data;
-                    if (types.toString() != "1") {
-                        alert(data);
+					 
+                    if (types.toString() != "true") {
+                       alert("账号密码错误！");
                     }
                     else{
 					

@@ -1,12 +1,20 @@
 <?php
 	session_start(); 
 	$_SESSION['username']=$_POST['user'];
+	$name=mb_convert_encoding($_SESSION['username'], 'gbk', 'utf-8');
 	$pass=$_POST['pass'];
-	include("config.php");
+	//µ÷ÓÃOAµÇÂ½½Ó¿Ú
+	$wsdl="http://10.128.3.129:1616?wsdl";
+	$client=new SoapClient($wsdl,array('encoding' => 'GBK'));
+	$param=array('name'=>$name,'password'=>$pass);
+	$ret=$client->HelloWorld($param);
+	echo $ret->HelloWorldResult;	
+	/*include("config.php");
 	$query=mysqli_query($conn,"select * from user where Name='$_SESSION[username]' and Passwd='$pass'");
 	if(mysqli_fetch_array($query,MYSQL_NUM)){
 		echo "1";
 		}else{
-		echo "è´¦å·å¯†ç æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ï¼";
+		echo "ÕËºÅÃÜÂëÓÐÎó£¬ÇëÖØÐÂÊäÈë£¡";
 		}
+	*/
 ?>

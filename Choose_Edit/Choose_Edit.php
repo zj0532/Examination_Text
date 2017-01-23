@@ -75,13 +75,15 @@
 		</div>
         <br>
         <div class="fitem">
-			<label>答&nbsp;&nbsp;案:</label>&nbsp;&nbsp;
-           <select id="Subject_Answer" name="Subject_Answer" class="validatebox">
-           		<option  selected="selected" value="A">A</option>
-                <option>B</option>
-                <option>C</option>
-                <option>D</option>
-           </select>
+			<label>答&nbsp;&nbsp;案:</label>&nbsp;&nbsp;                   
+           		<input id="Subject_Answer" name='Subject_Answer'>
+           		<div id='food'>
+           			<input  name='test'  type="checkbox" value="A"><span>A</span><br>
+           			<input  name='test'  type="checkbox" value="B"><span>B</span><br>
+           			<input  name='test'  type="checkbox" value="C"><span>C</span><br>
+           			<input  name='test'  type="checkbox" value="D"><span>D</span><br>
+           		</div>
+           		
 		</div>
         <div id="dlg-buttons">
 			<a href="#" class="easyui-linkbutton"  onclick="saveUser()">保存</a>

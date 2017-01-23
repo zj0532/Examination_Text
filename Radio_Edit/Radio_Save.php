@@ -22,7 +22,7 @@ switch ($Type_Job)
 }
 include '../config.php';
 
-$sql = "insert into desktop_subjeck(Type,Type_Job,Subject_Title,Subject_A,Subject_B,Subject_C,Subject_D,Subject_Answer) values('2','$Type_Job','$Subject_Title','$Subject_A','$Subject_B','$Subject_C','$Subject_D','$Subject_Answer')";
+$sql = "insert into desktop_subjeck(Type,Type_Job,Subject_Title,Subject_A,Subject_B,Subject_C,Subject_D,Subject_Answer) values('1','$Type_Job','$Subject_Title','$Subject_A','$Subject_B','$Subject_C','$Subject_D','$Subject_Answer')";
 $result = mysqli_query($conn,$sql);
 if ($result){
 	echo json_encode(array('success'=>true));

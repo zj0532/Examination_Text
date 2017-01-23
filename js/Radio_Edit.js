@@ -4,7 +4,7 @@ var url;
 $(function(){
 	$('#dg').datagrid({
 	title:'单选题题目列表',
-	url:'Radio_Edit/Radio_Edit.php',
+	url:'Radio_Edit/Radio_List.php',
 	toolbar:'#toolbar',
 	rownumbers:'true',
 	fitColumns:'true', 
@@ -28,7 +28,7 @@ $(function(){
 function newUser(){
 	$('#dlg').dialog('open').dialog('setTitle','添加新题');
 	$('#fm').form('clear');
-	url = 'Choose_Edit/Choose_Save.php'
+	url = 'Radio_Edit/Radio_Save.php'
 }
 	
 	function editUser(){
@@ -36,7 +36,7 @@ function newUser(){
 			if (row){
 				$('#dlg').dialog('open').dialog('setTitle','编辑多选题');
 				$('#fm').form('load',row);
-				url = 'Choose_Edit/Choose_Update.php?Subject_ID='+row.Subject_ID+'';
+				url = 'Radio_Edit/Choose_Update.php?Subject_ID='+row.Subject_ID+'';
 				
 			}
 		}
