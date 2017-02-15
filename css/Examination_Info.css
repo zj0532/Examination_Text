@@ -1,0 +1,16 @@
+#dd {
+    background:#C5E3E4;
+    height: 20px;
+	width: 100%;
+    display: block;
+	text-align: right;
+	float: right;
+}
+
+#dd select {
+    background: transparent;
+    padding-left: 10px;
+    width: 120px;
+    height: 100%;
+	
+}

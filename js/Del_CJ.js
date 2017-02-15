@@ -30,10 +30,30 @@ $(function(){
 	$('#myselect').change(function(){
 		//alert($(this).children('option:selected').val());
 		var p1 = $(this).children('option:selected').val();
-		console.log(p1);
 		$('#Examination_Info').datagrid('load',{
 			str:p1,
 		})
 	})
 		 
 	});
+
+function Delete_CJ()
+{
+	var row = $('#Examination_Info').datagrid('getSelected');
+	if (row){
+		$.messager.confirm('删除','确定删除此题吗？',function(r){
+			if (r){
+				$.post('Del_CJ/Delete_CJ.php',{Result_ID:row['Result_ID']},function(result){
+					if (result.success){
+						$('#Examination_Info').datagrid('reload');	// reload the user data
+					} else {
+						$.messager.show({	// show error message
+							title: 'Error',
+							msg: result.errorMsg
+						});
+					}
+				},'json');
+			}
+		});
+	}
+}

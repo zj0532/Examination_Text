@@ -27,7 +27,7 @@ function paper(){
 	};
 
 function Inf(){
-		$('#center').load("Examination_Info.php");
+		$('#center').load("Examination_Info/Examination_Info.php");
 	};
 
 function Edit_Password(){
@@ -45,4 +45,7 @@ function Radio_Edit(){
 		$('#center').load("Radio_Edit/Radio_Edit.php");
 }
 
+function Del_CJ(){
+		$('#center').load("Del_CJ/Del_CJ.php");
+}
 

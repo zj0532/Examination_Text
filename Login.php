@@ -62,7 +62,8 @@ a.abc{text-decoration:none;
                 <div class='Look'><a href='#' onclick='Choose_Edit()'>编辑多选</a></div><br />
                 <div class='Look'><a href='#' onclick='Simple()'>编辑简答</a></div><br />
                 <div class='Look'><a href='#' onclick='paper()'>编辑试卷</a></div><br />
-				<div class='Look'><a href='#' onclick='Set_Test()'>设置试卷</a></div><br />";
+				<div class='Look'><a href='#' onclick='Set_Test()'>设置试卷</a></div><br />
+				<div class='Look'><a href='#' onclick='Del_CJ()'>删除成绩</a></div><br />";	
 				}
 			?>
                 

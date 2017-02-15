@@ -3,18 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>设置考试试卷</title>
-	<link rel="stylesheet" type="text/css" href="../Examination_Text_local/css/easyui.css">
-	<link rel="stylesheet" type="text/css" href="../Examination_Text_local/css/icon.css">
-	<link rel="stylesheet" type="text/css" href="../Examination_Text_local/css/demo.css">
-    <link rel="stylesheet" type="text/css" href="../Examination_Text_local/css/Login.css">
-    <script type="text/javascript" src="../Examination_Text_local/js/jquery-1.11.1.js"></script>
-    <script type="text/javascript" src="../Examination_Text_local/js/jquery.easyui.min.js"></script>
-    <script type="text/javascript" src="../Examination_Text_local/js/Set_Test.js"></script>
-    <!--<script type="text/javascript" src="../Examination_Text_local/js/Login.js"></script>-->
-    <script>
-		
-		
-	</script>
+	<link rel="stylesheet" type="text/css" href="/Examination_Text/css/easyui.css">
+	<link rel="stylesheet" type="text/css" href="/Examination_Text/css/icon.css">
+	<link rel="stylesheet" type="text/css" href="/Examination_Text/css/demo.css">
+    <script type="text/javascript" src="/Examination_Text/js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="/Examination_Text/js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="/Examination_Text/js/Set_Test.js"></script>
 </head>
 
 <body>
