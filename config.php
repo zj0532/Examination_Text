@@ -1,11 +1,14 @@
 <?php
+	$dbserver    = "10.138.127.43";
+	$dbuser	     = "zabbix";
+	$dbpassword  = "txgy789";
+	$dbatabase   = "Examination";
 
-// ******************** Êý¾Ý¿âÉèÖÃ ********************
-$dbserver   = "127.0.0.1";
-$dbuser     = "root";              							// Êý¾Ý¿âÓÃ»§Ãû
-$dbpassword = "root";               						// Êý¾Ý¿âÃÜÂë
-$dbdatabase = "examination";       						// Êý¾Ý¿âÃû³Æ
-///////////
- $conn = mysqli_connect($dbserver,$dbuser,$dbpassword,$dbdatabase) or die("Êý¾Ý¿âÁ´½Ó´íÎó".mysql_error());
- mysqli_query($conn,"SET NAMES utf8");
+	$conn = mysqli_connect($dbserver,$dbuser,$dbpassword,$dbatabase);
+	if(!$conn)
+	{
+		die("è¿žæŽ¥é”™è¯¯ï¼š" . mysqli_connect_error());
+	}
+	mysqli_query($conn,"SET NAMES utf8");
+	
 ?>

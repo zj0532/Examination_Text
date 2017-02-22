@@ -58,13 +58,13 @@ $(function(){
 				 }
 					},'-',
 				{
-					text:'设置为考试试卷123',
+					text:'设置为考试试卷',
 					iconCls:'icon-tip',
 					handler:function()
 					{
 						
 						var Custom_name=$('#dg').datagrid('getSelected');
-						alert(Custom_name);
+						console.log(Custom_name);
 						$.messager.confirm('设置','您确认要设置成考试试卷吗？',function(r)
 						{
 							if(r)
@@ -78,6 +78,7 @@ $(function(){
 								success: function (data, status)
 									{
 										$.messager.alert('提示',data);
+									
 										$('#dg').datagrid('reload');
 									},
 								error: function () { alert("设置为考试试卷失败！") }

@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>管理简答题</title>
-	<link rel="stylesheet" type="text/css" href="css/easyui.css">
-	<link rel="stylesheet" type="text/css" href="css/icon.css">
-	<link rel="stylesheet" type="text/css" href="css/demo.css">
-    <link rel="stylesheet" type="text/css" href="css/Simple_Admin.css">
-    <script type="text/javascript" src="js/jquery-1.6.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easyui.min.js"></script>
-    <script type="text/javascript" src="js/Simple_Admin.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../css/icon.css">
+	<link rel="stylesheet" type="text/css" href="../css/demo.css">
+    <link rel="stylesheet" type="text/css" href="../css/Simple_Admin.css">
+    <script type="text/javascript" src="../js/jquery-1.6.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/Simple_Admin.js"></script>
 	<?php
     session_start();
 	if(isset($_SESSION['username']))

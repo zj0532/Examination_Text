@@ -3,13 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>查看成绩</title>
-	<link rel="stylesheet" type="text/css" href="css/easyui.css">
-	<link rel="stylesheet" type="text/css" href="css/icon.css">
-	<link rel="stylesheet" type="text/css" href="css/demo.css">
-	<link rel="stylesheet" type="text/css" href="css/Examination_Info.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easyui.min.js"></script>
-    <script type="text/javascript" src="js/Examination_Info.js"></script>
+	<link rel="stylesheet" type="text/css" href="/Examination_Text/css/easyui.css">
+	<link rel="stylesheet" type="text/css" href="/Examination_Text/css/icon.css">
+	<link rel="stylesheet" type="text/css" href="/Examination_Text/css/demo.css">
+	<link rel="stylesheet" type="text/css" href="/Examination_Text/css/Examination_Info.css">
+    <script type="text/javascript" src="/Examination_Text/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Examination_Text/js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="/Examination_Text/js/Examination_Info.js"></script>
 </head>
 	
 <body>

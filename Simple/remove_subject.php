@@ -2,7 +2,7 @@
 
 $Subject_ID = intval($_REQUEST['Subject_ID']);
 
-include 'config.php';
+include '../config.php';
 $sql = "update desktop_subjeck set status='2' where Subject_ID=$Subject_ID";
 $result = mysqli_query($conn,$sql);
 if ($result){

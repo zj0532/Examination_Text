@@ -1,4 +1,4 @@
-<?
+<?php
 //设置为考试试卷页面处理
 include('../config.php');
 $Custom_name=$_POST['Custom_name'];

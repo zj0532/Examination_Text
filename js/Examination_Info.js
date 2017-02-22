@@ -3,7 +3,6 @@ var year=mydate.getFullYear();
 var month=mydate.getMonth()+1;
 month=(month<10?"0"+month:month);
 var str=(year.toString()+'-'+month.toString());
-console.log(str);
 $(function(){
 	
 	$('#Examination_Info').datagrid({
@@ -30,10 +29,9 @@ $(function(){
 	$('#myselect').change(function(){
 		//alert($(this).children('option:selected').val());
 		var p1 = $(this).children('option:selected').val();
-		console.log(p1);
 		$('#Examination_Info').datagrid('load',{
-			str:p1,
-		})
-	})
+			str:p1
+		});
+	});
 		 
 	});

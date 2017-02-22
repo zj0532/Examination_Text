@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>简答题试卷</title>
-<link rel="stylesheet" type="text/css" href="js/jquery.easyui.min.js">
-	<link rel="stylesheet" type="text/css" href="css/icon.css">
-	<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../js/jquery.easyui.min.js">
+	<link rel="stylesheet" type="text/css" href="../css/icon.css">
+	<script type="text/javascript" src="../js/jquery-1.6.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			$('#ff').form({
@@ -18,13 +18,13 @@
 	</script>
 </head>
 <?php 
-include("config.php");
+include("../config.php");
 
 $i=1; 
 ?>
 <body>
 <div style="padding:3px 2px;border-bottom:1px solid #ccc">简答题</div>
-	<form id="ff" action="form1_proc.php" method="post">
+	<form id="ff" action="../form1_proc.php" method="post">
 		<table>
 			<?php while($row=mysql_fetch_array($Result))
             { ?>
